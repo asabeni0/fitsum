@@ -1,5 +1,4 @@
 services:
-  # Main Auto-Add Server
   - type: web
     name: auto-add-server
     runtime: python
@@ -12,7 +11,5 @@ services:
         value: 3.11.0
       - key: PORT
         value: 10000
-      - key: GITHUB_TOKEN
-        sync: false
     healthCheckPath: /ping
     autoDeploy: true
